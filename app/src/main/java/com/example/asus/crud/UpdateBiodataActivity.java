@@ -50,7 +50,7 @@ public class UpdateBiodataActivity extends AppCompatActivity {
                         text2.getText().toString() +"', tgl='" +
                         text3.getText().toString()+"', jk='"+
                         text4.getText().toString() +"', alamat='" +
-                        text5.getText().toString() + "' where no='" +
+                        text5.getText().toString() + "' where kelas='" +
                         text1.getText().toString()+"'");
                 Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
                 MainActivity.ma.RefreshList();
