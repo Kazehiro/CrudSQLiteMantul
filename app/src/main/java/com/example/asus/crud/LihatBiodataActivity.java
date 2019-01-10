@@ -30,11 +30,11 @@ public class LihatBiodataActivity extends AppCompatActivity {
         if (cursor.getCount()>0)
         {
             cursor.moveToPosition(0);
-            text1.setText(cursor.getString(0).toString());
-            text2.setText(cursor.getString(1).toString());
-            text3.setText(cursor.getString(2).toString());
-            text4.setText(cursor.getString(3).toString());
-            text5.setText(cursor.getString(4).toString());
+            text1.setText(cursor.getString(1).toString());
+            text2.setText(cursor.getString(2).toString());
+            text3.setText(cursor.getString(3).toString());
+            text4.setText(cursor.getString(4).toString());
+            text5.setText(cursor.getString(5).toString());
         }
         ton2 = (Button) findViewById(R.id.button1);
         ton2.setOnClickListener(new View.OnClickListener() {

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         cursor.moveToFirst();
         for (int cc = 0; cc < cursor.getCount(); cc++) {
             cursor.moveToPosition(cc);
-            daftar[cc] = cursor.getString(1).toString();
+            daftar[cc] = cursor.getString(2).toString();
         }
         ListView01 = (ListView) findViewById(R.id.ListView1);
         ListView01.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftar));
